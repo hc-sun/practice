@@ -8,9 +8,7 @@ class Solution:
         if n == 1:
             return s
         for i in range(1, n):
-            val = self.next_str(s)
-            s = val
-            print(val)
+            s = self.next_str(s)
         return s
             
     def next_str(self, s):
