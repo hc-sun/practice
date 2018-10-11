@@ -34,6 +34,6 @@ class Solution:
         while l >= 0 and r < len(s) and s[l] == s[r]: #keep adding if left==right
             l -= 1
             r += 1
-        return s[l-1:r] # previous index
+        return s[l+1:r] # previous index->left add 1, r is already not included
 # Input: "babad"
 # Output: "bab"
